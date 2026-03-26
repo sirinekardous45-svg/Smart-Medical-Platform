@@ -1,0 +1,33 @@
+# 🏥 Smart Medical Platform
+
+## 📌 Description
+Smart Medical Platform est une application web dédiée à la gestion des données médicales.
+Ce projet est réalisé dans le cadre de la phase de laboratoire.
+
+👤 **Travail individuel** : Ce projet est développé par un seul étudiante .
+
+---
+
+## 🎯 Objectif du projet
+L'objectif est de créer une plateforme intelligente permettant de :
+- Gérer les patients
+- Organiser les rendez-vous
+- Centraliser les informations médicales
+- Améliorer la gestion des données de santé
+
+---
+
+## ⚙️ Fonctionnalités principales
+- 👤 Gestion des patients (CRUD)
+- 📅 Gestion des rendez-vous
+- 📊 Dashboard interactif
+- 🔔 Notifications (optionnel)
+- 🔐 Authentification (login sécurisé)
+
+---
+
+## 🛠️ Technologies utilisées
+- **Frontend** : React.js
+- **Backend** : Node.js + Express.js
+- **Base de données** : MongoDB
+- **Outils** : Git, GitHub
