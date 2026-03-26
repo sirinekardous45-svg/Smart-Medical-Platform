@@ -1,10 +1,11 @@
+// Models/Message.js
 const mongoose = require("mongoose");
 
-const MessageSchema = new mongoose.Schema({
-    sender: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
-    text: { type: String, required: true },
-    room: { type: String, required: true },
-    createdAt: { type: Date, default: Date.now }
+const messageSchema = new mongoose.Schema({
+  roomId: { type: String, required: true },
+  sender: { type: String, required: true },
+  text: { type: String, required: true },
+  timestamp: { type: Date, default: Date.now }
 });
 
-module.exports = mongoose.model("Message", MessageSchema);
+module.exports = mongoose.model("Message", messageSchema);
