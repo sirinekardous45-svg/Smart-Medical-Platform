@@ -1,0 +1,38 @@
+.landing-container {
+  height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+.landing-content h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #00c6ff;
+}
+
+.landing-content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.landing-buttons button {
+  padding: 12px 25px;
+  margin: 0 10px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  background: linear-gradient(90deg, #0077ff, #00c6ff);
+  color: #fff;
+  transition: 0.3s;
+}
+
+.landing-buttons button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,119,255,0.45);
+}

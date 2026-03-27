@@ -1,24 +1,23 @@
 import React, { useState } from "react";
+import "./MessageForm.css";
 
-const MessageForm = ({ socket, roomId, username }) => {
+const MessageForm = ({ onSend }) => {
   const [text, setText] = useState("");
 
-  const sendMessage = (e) => {
+  const handleSend = (e) => {
     e.preventDefault();
-    if (text.trim() === "") return;
-
-    const messageData = { roomId, sender: username, text, timestamp: new Date() };
-    socket.emit("sendMessage", messageData);
+    if (!text) return;
+    onSend(text);
     setText("");
   };
 
   return (
-    <form onSubmit={sendMessage}>
+    <form className="message-form" onSubmit={handleSend}>
       <input
         type="text"
+        placeholder="Type your message..."
         value={text}
         onChange={(e) => setText(e.target.value)}
-        placeholder="Type a message..."
       />
       <button type="submit">Send</button>
     </form>
